@@ -8,14 +8,14 @@
 
 .container {
 	background: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.801)),
-		url("../Images/vkg\ logo.jpg");
+		url("../Images/vkg\ logo5.jpg");
 
 	background-size: cover;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
-	background-position-y: -175px;
+	background-position-y: -190px;
 }
 
 nav {
