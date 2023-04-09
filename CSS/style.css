@@ -108,6 +108,7 @@ nav ul li a:hover::after {
 	font-size: 120px;
 	color: yellow;
 	text-transform: uppercase;
+	padding-left: 100px;
 }
 
 .button {
@@ -165,6 +166,7 @@ nav ul li a:hover::after {
 
 	.main h1 {
 		font-size: 80px;
+		padding-right: ;
 	}
 }
 
@@ -236,7 +238,7 @@ nav ul li a:hover::after {
 	}
 
 	.main h1 {
-		padding-right: 2px;
+		margin-left: -90px;
 		font-size: 30px;
 	}
 
