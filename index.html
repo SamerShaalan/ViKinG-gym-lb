@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Viking</title>
+		<link rel="stylesheet" href="CSS/style.css" />
+
+		<link rel="icon" type="image/icon" href="Images/favicon.png" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+			integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="container">
+			<nav>
+				<h1 class="logo">Become<span> Viking!</span></h1>
+				<div class="nav-links">
+					<ul id="menu">
+						<li><a href="index.html">Home</a></li>
+						<!-- <li><a href="">Product</a></li> -->
+						<li><a href="about.html">About</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li>
+							<a
+								href="https://us10.list-manage.com/contact-form?u=253132bdbdb019212673a5d37&form_id=1086dd02b62c8980588883d6498360df"
+								>Contact</a
+							>
+						</li>
+					</ul>
+					<div class="social">
+						<a href="#" onclick="showHideMenu()"><i class="fa fa-times"></i></a>
+						<!-- <a href=""><i class="fab fa-facebook"></i></a> -->
+						<a href="https://www.instagram.com/vikingym.lb"
+							><i class="fab fa-instagram"></i
+						></a>
+						<!-- <a href=""><i class="fab fa-twitter"></i></a> -->
+						<a href="https://www.tiktok.com/@vikingym?lang=en"
+							><i class="fab fa-tiktok"></i
+						></a>
+
+						<a href="#" onclick="showHideMenu()"><i class="fa fa-bars"></i></a>
+					</div>
+				</div>
+			</nav>
+
+			<div class="main">
+				<h2>Welcome to</h2>
+				<h1>Viking Lebanon!</h1>
+				<p>
+					Forge your strength sharpen your skills and
+					<span class="description2">become a true Viking today!</span>
+				</p>
+				<a href="The schedule.html" class="button">Learn more</a>
+			</div>
+			<div class="sponsor">
+				<p>Sponsored by</p>
+				<img class="vkg" src="Images/vkg.png" />
+			</div>
+		</div>
+
+		<script>
+			var menu = document.getElementById("menu");
+			function showHideMenu() {
+				menu.classList.toggle("opened");
+			}
+		</script>
+	</body>
+</html>

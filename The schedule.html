@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+		/>
+		<link rel="icon" type="image/icon" href="Images/favicon.png" />
+		<title>Schedule</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				background-color: #333;
+				font-family: sans-serif;
+			}
+
+			.table-container {
+				padding: 0 10%;
+
+				margin: 30px auto 50px;
+			}
+
+			.heading {
+				font-size: 40px;
+				text-align: center;
+				color: #f1f1f1;
+				margin-bottom: 40px;
+			}
+
+			.table {
+				width: 100%;
+				border-collapse: collapse;
+			}
+
+			.table thead {
+				background-color: yellow;
+			}
+
+			.table thead tr th {
+				font-size: 14px;
+				font-weight: 600;
+				letter-spacing: 0.35px;
+				color: white;
+				text-shadow: 1px 1px 1px black;
+				opacity: 1;
+				padding: 20px;
+				vertical-align: top;
+				border: 1px solid black;
+			}
+
+			.table tbody tr th {
+				font-size: 14px;
+				letter-spacing: 0.35px;
+				font-weight: normal;
+				color: #f1f1f1;
+				background-color: #3c3f44;
+				padding: 8px;
+				text-align: center;
+			}
+
+			.table tbody tr td {
+				font-size: 14px;
+				letter-spacing: 0.35px;
+				font-weight: normal;
+				color: #f1f1f1;
+				background-color: #3c3f44;
+				padding: 8px;
+				text-align: center;
+				border: 1px solid black;
+			}
+
+			.table .text_open {
+				font-size: 14px;
+				font-weight: bold;
+				letter-spacing: 0.35px;
+				color: #ff1046;
+			}
+
+			.table tbody tr td .btn {
+				width: 130px;
+				text-decoration: none;
+				line-height: 35px;
+				display: inline-block;
+				background-color: yellow;
+				font-weight: bold;
+				color: BLACK;
+				text-shadow: 1px 1px 1px white;
+				text-align: center;
+				vertical-align: middle;
+				user-select: none;
+				border: 1px solid transparent;
+				font-size: 14px;
+				opacity: 1;
+			}
+
+		
+			.arrow {
+				color: yellow;
+				font-size: 1.5rem;
+				position: absolute;
+			}
+			.home-link {
+				font-weight: bold;
+				position: fixed;
+				right: 0;
+				margin: 15px 30px 30px;
+			}
+			
+
+			/*
+			img {
+				display: block;
+				margin: 0 auto;
+			} */
+
+			@media (max-width: 768px) {
+				.table thead {
+					display: none;
+					
+				}
+
+				.table,
+				.table tbody,
+				.table tr,
+				.table td {
+					display: block;
+					width: 100%;
+				}
+
+				.table tr {
+					margin-bottom: 15px;
+				}
+				.table tbody tr td {
+					text-align: right;
+					padding-left: 50%;
+					position: relative;
+				}
+
+				.table td:before {
+					content: attr(data-label);
+					position: absolute;
+					left: 0;
+					width: 50%;
+					padding-left: 15px;
+					font-weight: 600;
+					font-size: 14px;
+					text-align: left;
+				}
+				/*
+				img {
+					width: 100%;
+					object-fit: contain;
+				} */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="table-container">
+			
+			<h1 class="heading">YOUNG B+</h1>
+			<nav>
+				<!-- <ul> -->
+				<!-- <li class="button"> -->
+				<div class="home-link">
+					<a class="arrow" href="index.html">
+						<!-- <i class="fa-solid fa-arrow-rotate-left" style="color: yellow"></i> -->
+						<i class="fa-solid fa-circle-arrow-left" style="color: #fae500"></i>
+					</a>
+				</div>
+				<!-- </li> -->
+				<!-- </ul> -->
+			</nav>
+			
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Day</th>
+						<!-- <th>Age</th> -->
+						<th>Time</th>
+						<!-- <th>-</th>
+						<th>-</th> -->
+						<th>#</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- <tr>
+						<td data-label="Day">Mon/Fri</td>
+						<td data-label="Age">8-12</td>
+						<td data-label="Time">4pm - 5pm</td>
+						 <td data-label="Training Mode">-</td>
+						<td data-label="Batch Status">
+							<span class="text_open">-</span>
+						</td> 
+						<td data-label="#">
+							<a
+								href="https://us10.list-manage.com/contact-form?u=253132bdbdb019212673a5d37&form_id=1086dd02b62c8980588883d6498360df"
+								class="btn"
+								>Enroll Now</a
+							>
+						</td>
+					</tr> -->
+					<!-- <tr>
+						<td data-label="Day">Wed</td>
+						<td data-label="Age">8-12</td>
+						<td data-label="Time">4pm - 5pm</td>
+						 <td data-label="Training Mode">-</td>
+						<td data-label="Batch Status">
+							<span class="text_open">-</span>
+						</td> 
+						<td data-label="#">
+							<a
+								href="https://us10.list-manage.com/contact-form?u=253132bdbdb019212673a5d37&form_id=1086dd02b62c8980588883d6498360df"
+								class="btn"
+								>Enroll Now</a
+							>
+						</td>
+					</tr> -->
+					<tr>
+						<td data-label="Day">Tue/Thurs</td>
+						<!-- <td data-label="Age">4-6</td> -->
+						<td data-label="Time">5pm - 6pm</td>
+						<!-- <td data-label="Training Mode">-</td>
+						<td data-label="Batch Status">
+							<span class="text_open">-</span>
+						</td> -->
+						<td data-label="#">
+							<a
+								href="https://us10.list-manage.com/contact-form?u=253132bdbdb019212673a5d37&form_id=1086dd02b62c8980588883d6498360df"
+								class="btn"
+								>Enroll Now</a
+							>
+						</td>
+					</tr>
+					<!-- <tr>
+						<td data-label="Start Date">1 May 2023</td>
+						<td data-label="Start / End time">09:00 - 13:00</td>
+						<td data-label="Batch time">-</td>
+						<td data-label="Training Mode">-</td>
+						<td data-label="Batch Status">
+							<span class="text_open">[Open]</span>
+						</td>
+						<td data-label="#">
+							<a
+								href="https://us10.list-manage.com/contact-form?u=253132bdbdb019212673a5d37&form_id=1086dd02b62c8980588883d6498360df"
+								class="btn"
+								>Enroll Now</a
+							>
+						</td>
+					</tr> -->
+				</tbody>
+			</table>
+		</div>
+		<div class="table-container">
+			<h1 class="heading">YOUNG A+</h1>
+			
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Day</th>
+						<!-- <th>Age</th> -->
+						<th>Time</th>
+						<!-- <th>-</th>
+						<th>-</th> -->
+						<th>#</th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- <tr>
+						<td data-label="Day">Mon/Fri</td>
+						<td data-label="Age">8-12</td>
+						<td data-label="Time">5pm - 6pm</td>
+						<td data-label="Training Mode">-</td>
+						<td data-label="Batch Status">
+							<span class="text_open">-</span>
+						</td> 
+						<td data-label="#">
+							<a
+								href="https://us10.list-manage.com/contact-form?u=253132bdbdb019212673a5d37&form_id=1086dd02b62c8980588883d6498360df"
+								class="btn"
+								>Enroll Now</a
+							>
+						</td>
+					</tr> -->
+					<!-- <tr>
+						<td data-label="Start Date">Mon/Fri</td>
+						<td data-label="Age">13-16</td>
+						<td data-label="Time">6pm - 7pm</td>
+						 <td data-label="Training Mode">-</td>
+						<td data-label="Batch Status">
+							<span class="text_open">-</span>
+						</td> 
+						<td data-label="#">
+							<a
+								href="https://us10.list-manage.com/contact-form?u=253132bdbdb019212673a5d37&form_id=1086dd02b62c8980588883d6498360df"
+								class="btn"
+								>Enroll Now</a
+							>
+						</td>
+					</tr> -->
+					<tr>
+						<td data-label="Day">Mon/Wed</td>
+						<!-- <td data-label="Age">15-18</td> -->
+						<td data-label="Time">4pm - 6pm</td>
+						<!-- <td data-label="Training Mode">-</td>
+						<td data-label="Batch Status">
+							<span class="text_open">-</span>
+						</td> -->
+						<td data-label="#">
+							<a
+								href="https://us10.list-manage.com/contact-form?u=253132bdbdb019212673a5d37&form_id=1086dd02b62c8980588883d6498360df"
+								class="btn"
+								>Enroll Now</a
+							>
+						</td>
+					</tr>
+					<!-- <tr>
+						<td data-label="Start Date">1 May 2023</td>
+						<td data-label="Start / End time">09:00 - 13:00</td>
+						<td data-label="Batch time">-</td>
+						<td data-label="Training Mode">-</td>
+						<td data-label="Batch Status">
+							<span class="text_open">[Open]</span>
+						</td>
+						<td data-label="#">
+							<a
+								href="https://us10.list-manage.com/contact-form?u=253132bdbdb019212673a5d37&form_id=1086dd02b62c8980588883d6498360df"
+								class="btn"
+								>Enroll Now</a
+							>
+						</td>
+					</tr> -->
+				</tbody>
+			</table>
+		</div>
+		
+		
+		<div class="table-container">
+			<h1 class="heading">BOXING</h1>
+			
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Day</th>
+						<!-- <th>Age</th> -->
+						<th>Time</th>
+						<!-- <th>-</th>
+						<th>-</th> -->
+						<th>#</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td data-label="Day">Tue/Thurs</td>
+						<!-- <td data-label="Start / End time">7pm - 8:30pm</td> -->
+						<td data-label="Time">7:00pm - 8:00pm</td>
+						<!-- <td data-label="Training Mode">-</td>
+						<td data-label="Batch Status">
+							<span class="text_open">-</span>
+						</td> -->
+						<td data-label="#">
+							<a
+								href="https://us10.list-manage.com/contact-form?u=253132bdbdb019212673a5d37&form_id=1086dd02b62c8980588883d6498360df"
+								class="btn"
+								>Enroll Now</a
+							>
+						</td>
+					</tr>
+					<!-- <tr>
+						<td data-label="Day">Sat</td>
+						 <td data-label="Start / End time">8-12</td> 
+						<td data-label="Time">10am - 12pm</td>
+						 <td data-label="Training Mode">-</td>
+						<td data-label="Batch Status">
+							<span class="text_open">-</span>
+						</td> 
+						 <td data-label="#"> 
+							 <a
+								href="https://us10.list-manage.com/contact-form?u=253132bdbdb019212673a5d37&form_id=1086dd02b62c8980588883d6498360df"
+								class="btn"
+								>Enroll Now</a
+							> 
+						</td>
+					</tr> -->
+					<!-- <tr>
+						<td data-label="Start Date">Tue/Thurs</td>
+						 <td data-label="Start / End time">4-6</td> 
+						<td data-label="Batch time">4pm - 5pm</td>
+						 <td data-label="Training Mode">-</td>
+						<td data-label="Batch Status">
+							<span class="text_open">-</span>
+						</td> -->
+						<!-- <td data-label="#"></td> 
+					</tr> -->
+					<!-- <tr>
+						<td data-label="Start Date">1 May 2023</td>
+						<td data-label="Start / End time">09:00 - 13:00</td>
+						<td data-label="Batch time">-</td>
+						<td data-label="Training Mode">-</td>
+						<td data-label="Batch Status">
+							<span class="text_open">[Open]</span>
+						</td>
+						<td data-label="#">
+							<a
+								href="https://us10.list-manage.com/contact-form?u=253132bdbdb019212673a5d37&form_id=1086dd02b62c8980588883d6498360df"
+								class="btn"
+								>Enroll Now</a
+							>
+						</td>
+					</tr> -->
+				</tbody>
+			</table>
+		</div>
+		<div class="table-container">
+			<h1 class="heading">THAI BOXING</h1>
+			
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Day</th>
+						<!-- <th>Age</th> -->
+						<th>Time</th>
+						<!-- <th>-</th>
+						<th>-</th> -->
+						<th>#</th> 
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td data-label="Day">Mon/Wed</td>
+						<!-- <td data-label="Start / End time">7pm - 8:30pm</td> -->
+						<td data-label="Time">7:00pm - 8:00pm</td>
+						<!-- <td data-label="Training Mode">-</td>
+						<td data-label="Batch Status">
+							<span class="text_open">-</span>
+						</td> -->
+						<td data-label="#">
+							<a
+								href="https://us10.list-manage.com/contact-form?u=253132bdbdb019212673a5d37&form_id=1086dd02b62c8980588883d6498360df"
+								class="btn"
+								>Enroll Now</a
+							>
+						</td>
+					</tr>
+					
+					
+					
+				</tbody>
+			</table>
+			
+		</div>
+		
+		<div class="table-container">
+			<h1 class="heading">CROSSFIT</h1>
+			
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Day</th>
+						<!-- <th>Age</th> -->
+						<th>Time</th>
+						<!-- <th>-</th>
+						<th>-</th> -->
+						<th>#</th> 
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td data-label="Day">Tue/Thurs</td>
+						<!-- <td data-label="Start / End time">7pm - 8:30pm</td> -->
+						<td data-label="Time">6pm - 7pm</td>
+						<!-- <td data-label="Training Mode">-</td>
+						<td data-label="Batch Status">
+							<span class="text_open">-</span>
+						</td> -->
+						<td data-label="#">
+							<a
+								href="https://us10.list-manage.com/contact-form?u=253132bdbdb019212673a5d37&form_id=1086dd02b62c8980588883d6498360df"
+								class="btn"
+								>Enroll Now</a
+							>
+						</td>
+					</tr>
+					
+					
+					
+				</tbody>
+			</table>
+			
+		</div>
+		<div class="table-container">
+			<h1 class="heading">VIKING TEAM</h1>
+			
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Day</th>
+						<!-- <th>Age</th> -->
+						<th>Time</th>
+						<!-- <th>-</th>
+						<th>-</th> -->
+						<!-- <th>#</th> -->
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td data-label="Day">Tue/Thurs</td>
+						<!-- <td data-label="Start / End time">7pm - 8:30pm</td> -->
+						<td data-label="Time">8:00pm - 10:00pm</td>
+						<!-- <td data-label="Training Mode">-</td>
+						<td data-label="Batch Status">
+							<span class="text_open">-</span>
+						</td> -->
+						<!-- <td data-label="#">
+							<a
+								href="https://us10.list-manage.com/contact-form?u=253132bdbdb019212673a5d37&form_id=1086dd02b62c8980588883d6498360df"
+								class="btn"
+								>Enroll Now</a
+							>
+						</td> -->
+					</tr>
+					<tr>
+						<td data-label="Day">Mon/wed</td>
+						<!-- <td data-label="Start / End time">8-12</td> -->
+						<td data-label="Time">8:00pm - 10:00pm</td>
+						<!-- <td data-label="Training Mode">-</td>
+						<td data-label="Batch Status">
+							<span class="text_open">-</span>
+						</td> -->
+						<!-- <td data-label="#"> -->
+							<!-- <a
+								href="https://us10.list-manage.com/contact-form?u=253132bdbdb019212673a5d37&form_id=1086dd02b62c8980588883d6498360df"
+								class="btn"
+								>Enroll Now</a
+							> -->
+						</td>
+					</tr>
+					<!-- <tr>
+						<td data-label="Start Date">Tue/Thurs</td>
+						 <td data-label="Start / End time">4-6</td> 
+						<td data-label="Batch time">4pm - 5pm</td>
+						 <td data-label="Training Mode">-</td>
+						<td data-label="Batch Status">
+							<span class="text_open">-</span>
+						</td> -->
+						<!-- <td data-label="#"></td> 
+					</tr> -->
+					<!-- <tr>
+						<td data-label="Start Date">1 May 2023</td>
+						<td data-label="Start / End time">09:00 - 13:00</td>
+						<td data-label="Batch time">-</td>
+						<td data-label="Training Mode">-</td>
+						<td data-label="Batch Status">
+							<span class="text_open">[Open]</span>
+						</td>
+						<td data-label="#">
+							<a
+								href="https://us10.list-manage.com/contact-form?u=253132bdbdb019212673a5d37&form_id=1086dd02b62c8980588883d6498360df"
+								class="btn"
+								>Enroll Now</a
+							>
+						</td>
+					</tr> -->
+				</tbody>
+			</table>
+			</div>
+			<div class="table-container">
+				<h1 class="heading">FIGHTERS</h1>
+				
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Day</th>
+							<!-- <th>Age</th> -->
+							<th>Time</th>
+							<!-- <th>-</th>
+							<th>-</th> -->
+							<!-- <th>#</th> -->
+						</tr>
+					</thead>
+					<tbody>
+						<!-- <tr>
+							<td data-label="Day">Tue/Thurs</td>
+							 <td data-label="Start / End time">7pm - 8:30pm</td>
+							<td data-label="Time">7pm - 8:30pm</td>
+							<td data-label="Training Mode">-</td>
+							<td data-label="Batch Status">
+								<span class="text_open">-</span>
+							</td> 
+							 <td data-label="#">
+								<a
+									href="https://us10.list-manage.com/contact-form?u=253132bdbdb019212673a5d37&form_id=1086dd02b62c8980588883d6498360df"
+									class="btn"
+									>Enroll Now</a
+								>
+							</td>
+						</tr> -->
+						<tr>
+							<td data-label="Day">Sat</td>
+							<!-- <td data-label="Start / End time">8-12</td> -->
+							<td data-label="Time">10:00pm - 10:00pm</td>
+							<!-- <td data-label="Training Mode">-</td>
+							<td data-label="Batch Status">
+								<span class="text_open">-</span>
+							</td> -->
+							<!-- <td data-label="#"> -->
+								<!-- <a
+									href="https://us10.list-manage.com/contact-form?u=253132bdbdb019212673a5d37&form_id=1086dd02b62c8980588883d6498360df"
+									class="btn"
+									>Enroll Now</a
+								> -->
+							</td>
+						</tr>
+						<!-- <tr>
+							<td data-label="Start Date">Tue/Thurs</td>
+							 <td data-label="Start / End time">4-6</td> 
+							<td data-label="Batch time">4pm - 5pm</td>
+							 <td data-label="Training Mode">-</td>
+							<td data-label="Batch Status">
+								<span class="text_open">-</span>
+							</td> -->
+							<!-- <td data-label="#"></td> 
+						</tr> -->
+						<!-- <tr>
+							<td data-label="Start Date">1 May 2023</td>
+							<td data-label="Start / End time">09:00 - 13:00</td>
+							<td data-label="Batch time">-</td>
+							<td data-label="Training Mode">-</td>
+							<td data-label="Batch Status">
+								<span class="text_open">[Open]</span>
+							</td>
+							<td data-label="#">
+								<a
+									href="https://us10.list-manage.com/contact-form?u=253132bdbdb019212673a5d37&form_id=1086dd02b62c8980588883d6498360df"
+									class="btn"
+									>Enroll Now</a
+								>
+							</td>
+						</tr> -->
+					</tbody>
+				</table>
+				</div>
+					
+		<div class="table-container">
+			<h1 class="heading">Women Sports</h1>
+			
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Day</th>
+						<!-- <th>Age</th> -->
+						<th>Time</th>
+						<!-- <th>-</th>
+						<th>-</th> -->
+						<th>#</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td data-label="Day">Mon/Wed</td>
+						<!-- <td data-label="Start / End time">7pm - 8:30pm</td> -->
+						<td data-label="Time">6:00pm - 7:00pm</td>
+						<!-- <td data-label="Training Mode">-</td>
+						<td data-label="Batch Status">
+							<span class="text_open">-</span>
+						</td> -->
+						<td data-label="#">
+							<a
+								href="https://us10.list-manage.com/contact-form?u=253132bdbdb019212673a5d37&form_id=1086dd02b62c8980588883d6498360df"
+								class="btn"
+								>Enroll Now</a
+							>
+						</td>
+					</tr>
+					<!-- <tr>
+						<td data-label="Day">Sat</td>
+						 <td data-label="Start / End time">8-12</td> 
+						<td data-label="Time">10am - 12pm</td>
+						 <td data-label="Training Mode">-</td>
+						<td data-label="Batch Status">
+							<span class="text_open">-</span>
+						</td> 
+						 <td data-label="#"> 
+							 <a
+								href="https://us10.list-manage.com/contact-form?u=253132bdbdb019212673a5d37&form_id=1086dd02b62c8980588883d6498360df"
+								class="btn"
+								>Enroll Now</a
+							> 
+						</td>
+					</tr> -->
+					<!-- <tr>
+						<td data-label="Start Date">Tue/Thurs</td>
+						 <td data-label="Start / End time">4-6</td> 
+						<td data-label="Batch time">4pm - 5pm</td>
+						 <td data-label="Training Mode">-</td>
+						<td data-label="Batch Status">
+							<span class="text_open">-</span>
+						</td> -->
+						<!-- <td data-label="#"></td> 
+					</tr> -->
+					<!-- <tr>
+						<td data-label="Start Date">1 May 2023</td>
+						<td data-label="Start / End time">09:00 - 13:00</td>
+						<td data-label="Batch time">-</td>
+						<td data-label="Training Mode">-</td>
+						<td data-label="Batch Status">
+							<span class="text_open">[Open]</span>
+						</td>
+						<td data-label="#">
+							<a
+								href="https://us10.list-manage.com/contact-form?u=253132bdbdb019212673a5d37&form_id=1086dd02b62c8980588883d6498360df"
+								class="btn"
+								>Enroll Now</a
+							>
+						</td>
+					</tr> -->
+				</tbody>
+			</table>
+		</div>
+		
+	</body>
+</html>

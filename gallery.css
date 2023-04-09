@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+.arrow {
+	color: yellow;
+	font-size: 1.5rem;
+	position: absolute;
+}
+.home-link {
+	font-weight: bold;
+	position: fixed;
+	right: 0;
+	margin: 15px 26px 30px;
+}
+
+body {
+	background-color: #3c3f44;
+}
+
+.container {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5px 8%;
+}
+
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 30px;
+}
+
+.gallery img {
+	width: 100%;
+}

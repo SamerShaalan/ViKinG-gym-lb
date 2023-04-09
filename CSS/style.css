@@ -1,0 +1,262 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #fff;
+	font-family: "Oswald", sans-serif;
+}
+
+.container {
+	background: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.801)),
+		url("../Images/vkg\ logo.jpg");
+
+	background-size: cover;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	background-position-y: -175px;
+}
+
+nav {
+	padding: 2% 6%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-links {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	text-transform: uppercase;
+	font-size: 40px;
+}
+
+.logo span {
+	color: yellow;
+}
+
+nav ul {
+	display: flex;
+	list-style: none;
+	margin: auto;
+}
+
+nav ul li {
+	margin: 0 20px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	font-size: 18px;
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+
+.social a {
+	margin: 0 10px;
+}
+
+nav ul li a:hover {
+	color: yellow;
+}
+
+nav ul li a::after {
+	display: block;
+	content: "";
+	height: 2px;
+	width: 0;
+	background-color: yellow;
+	transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+	width: 100%;
+}
+.social a i {
+	transition: 0.5s;
+}
+
+.social a i:hover {
+	color: yellow;
+}
+
+.social a:first-child,
+.social a:last-child {
+	display: none;
+}
+
+.main {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.main h2 {
+	font-size: 72px;
+	text-transform: uppercase;
+	display: flex;
+}
+
+.main h1 {
+	font-size: 120px;
+	color: yellow;
+	text-transform: uppercase;
+}
+
+.button {
+	text-decoration: none;
+	border: 1px solid rgb(251, 251, 188);
+	padding: 15px 35px;
+	margin-top: 45px;
+	transition: 0.5s;
+	font-weight: bold;
+	font-size: large;
+	text-shadow: 1px 1px 1px black;
+}
+
+.button:hover {
+	background-color: yellow;
+}
+
+.sponsor {
+	display: flex;
+
+	color: white;
+	gap: 10px;
+	padding-left: 20px;
+	font-style: italic;
+	margin-bottom: 30px;
+}
+
+.vkg {
+	width: 5%;
+	height: 5%;
+}
+
+@media (max-width: 900px) {
+	.social {
+		position: fixed;
+		top: 0;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		height: 100vh;
+		width: 40px;
+		background-color: #000;
+		justify-content: center;
+		align-items: center;
+		border-left: 1px solid rgba(44, 44, 44);
+	}
+
+	.social a {
+		margin: 10px 0;
+	}
+
+	.main h2 {
+		font-size: 60px;
+	}
+
+	.main h1 {
+		font-size: 80px;
+	}
+}
+
+@media (max-width: 750px) {
+	.container {
+		background-position: 58%;
+		background-size: 520px;
+
+		background-repeat: no-repeat;
+		background-color: black;
+
+		height: auto;
+	}
+
+	.nav-links {
+		position: absolute;
+	}
+
+	.nav-links ul {
+		position: fixed;
+		top: 0;
+		right: -250px;
+		width: 250px;
+		height: 100vh;
+		background-color: black;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border-left: 1px solid rgba(44, 44, 44);
+		transition: right 0.5s;
+	}
+
+	.nav-links ul li {
+		flex-basis: 40px;
+		flex-grow: 1;
+		max-height: 80px;
+		display: flex;
+		align-items: center;
+	}
+
+	.logo {
+		text-align: center;
+		flex: 1;
+	}
+
+	.nav-links ul.opened {
+		right: 40px;
+	}
+
+	.social a:first-child,
+	.social a:last-child {
+		position: fixed;
+		top: 0;
+	}
+	.social a:last-child {
+		display: block;
+	}
+
+	ul.opened ~ .social a:first-child {
+		display: block;
+	}
+
+	ul.opened ~ .social a:last-child {
+		display: none;
+	}
+
+	.main h2 {
+		font-size: 45px;
+	}
+
+	.main h1 {
+		padding-right: 2px;
+		font-size: 30px;
+	}
+
+	.main p {
+		display: flex;
+		flex-direction: column;
+		width: 70%;
+	}
+
+	.description2 {
+		display: flex;
+		justify-content: center;
+	}
+
+	.sponsor {
+		display: flex;
+	}
+
+	.vkg {
+		height: 250%;
+		width: 25%;
+	}
+}
