@@ -5,8 +5,7 @@ body {
 	margin: 10px;
 	padding: 0;
 
-	background: linear-gradient(white, rgba(0, 0, 0, 0.801)),
-		url("../Images/vkg\ logo5.jpg");
+	background-color: yellow;
 
 	background-size: contain;
 	min-height: 100vh;
@@ -28,7 +27,7 @@ ul {
 
 a {
 	text-decoration: none;
-	color: #333;
+	color: yellow;
 }
 
 a:hover {
@@ -37,7 +36,7 @@ a:hover {
 
 /* Header Styles */
 header {
-	background-color: #ccc;
+	background-color: #0d0c0c;
 	padding: 10px;
 }
 
