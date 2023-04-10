@@ -53,19 +53,3 @@ nav li {
 header {
 	margin: -10px;
 }
-
-@media (max-width: 750px) {
-	.logo {
-		text-align: center;
-		flex: 1;
-	}
-	body {
-		background-position: 50%;
-		background-size: 520px;
-
-		background-color: black;
-		position: top;
-		top: 0;
-		height: auto;
-	}
-}
