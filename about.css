@@ -1,4 +1,15 @@
 /* Global Styles */
+.container {
+	background: linear-gradient(white, rgba(0, 0, 0, 0.801)),
+		url("../Images/vkg\ logo5.jpg");
+
+	background-size: cover;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	background-position-y: -5px;
+}
 body {
 	font-family: Arial, sans-serif;
 	margin: 10px;
