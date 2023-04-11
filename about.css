@@ -6,13 +6,16 @@ body {
 	padding: 0;
 
 	background-color: rgb(210, 210, 6);
-
-	background-size: contain;
+	background-image: url("../Images/vkg\ logo5.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
 	min-height: 100vh;
 	display: flex;
 
 	background-position-y: -5px;
 }
+
 p {
 	text-shadow: 1px 1px 1px rgb(210, 210, 6);
 }
