@@ -5,8 +5,9 @@ body {
 	margin: 10px;
 	padding: 0;
 
-	background-color: rgb(210, 210, 6);
-	background-image: url("../Images/vkg\ logo5.jpg");
+	background-color: black;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.801)),
+		url("../Images/vkg\ logo5.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -17,23 +18,28 @@ body {
 }
 
 p {
-	text-shadow: 1px 1px 1px rgb(210, 210, 6);
+	text-shadow: 1px 1px 1px black;
+	color: yellow;
 }
 
 h1,
 h2 {
 	font-weight: normal;
-	text-shadow: 1px 1px 1px rgb(210, 210, 6);
+	text-shadow: 1px 1px 1px black;
+	color: yellow;
 }
 
 ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	text-shadow: 1px 1px 1px black;
+	color: yellow;
 }
 
 a {
 	text-decoration: none;
+	text-shadow: 1px 1px 1px black;
 	color: yellow;
 }
 
@@ -62,4 +68,11 @@ nav li {
 
 header {
 	margin: -10px;
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		background-size: 700px;
+		background-position: center center;
+	}
 }
