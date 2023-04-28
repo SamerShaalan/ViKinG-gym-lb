@@ -131,7 +131,7 @@ nav ul li a:hover::after {
 
 	color: white;
 	gap: 10px;
-	padding-left: 20px;
+	padding-left: 10px;
 	font-style: italic;
 	margin-bottom: 30px;
 }
@@ -259,6 +259,6 @@ nav ul li a:hover::after {
 	.vkg {
 		height: 250%;
 		width: 25%;
-		padding-left: 10px;
+		padding-left: 5px;
 	}
 }
