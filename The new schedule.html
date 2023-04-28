@@ -17,8 +17,22 @@
 				box-sizing: border-box;
 			}
 			body {
-				background-color: #333;
+				/* background-color: #333;
 				font-family: sans-serif;
+				background-image: url(Images/vkgLogoNoBackground.png);
+				background-repeat: no-repeat; */
+
+				background-image: url(Images/vkgLogoNoBackground.png);
+				background-size: 70%;
+				font-family: Arial, sans-serif;
+				background-color: #333;
+				margin-top: 80px;
+				background-position-y: 130%;
+				background-repeat: no-repeat;
+				background-position-x: 50%;
+
+				justify-content: center;
+				align-items: center;
 			}
 
 			.table-container {
@@ -37,11 +51,30 @@
 			.table {
 				width: 100%;
 				border-collapse: collapse;
-				margin-top: -180px;
+				margin-top: 40px;
+				position: relative; /* Add this */
+				z-index: 1; /* Add this */
 			}
 
 			.table thead {
-				background-color: yellow;
+				background-color: rgb(255, 255, 0, 0.7);
+			}
+
+			.table thead th:first-child::after {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				width: 0.5%;
+				height: 23%;
+				border-style: solid;
+				border-width: 0 0 0 100%;
+				border-color: transparent transparent transparent black;
+				transform-origin: 0 0;
+				transform: skew(52.4deg);
+
+				z-index: 1;
 			}
 
 			.table thead tr th {
@@ -71,7 +104,7 @@
 				letter-spacing: 0.35px;
 				font-weight: normal;
 				color: #f1f1f1;
-				background-color: #3c3f44;
+				background-color: rgb(60, 63, 68, 0.7);
 				padding: 8px;
 				text-align: center;
 				border: 1px solid black;
@@ -101,23 +134,12 @@
 				opacity: 1;
 			}
 
-			.arrow {
-				color: yellow;
-				font-size: 1.5rem;
-				position: absolute;
-			}
-			.home-link {
-				font-weight: bold;
-				position: fixed;
-				right: 0;
-				margin: 15px 30px 30px;
-			}
-
-			img {
-				display: block;
-				margin: -50px auto;
-				width: 500px;
-				height: 500px;
+			.cont-image {
+				margin: 0 auto;
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 			}
 
 			@media (max-width: 768px) {
@@ -162,24 +184,48 @@
 		</style>
 	</head>
 	<body>
+		<div class="container">
+			<img
+				class="cont-image"
+				src="Images/theFaceRemoved-removebg-preview.png"
+			/>
+		</div>
 		<div class="table-container">
-			<img src="Images/123-removebg-preview.png" />
-
 			<table class="table">
 				<thead>
 					<tr>
-						<th>Day</th>
-						<th>Status</th>
-						<th>Time</th>
+						<th class="diagonal-header">
+							<div class="text-wrapper top-left">
+								<div style="padding-left: 15px">Days<br /></div>
+							</div>
+							<div class="text-wrapper bottom-right">
+								<div style="padding-right: 25px">
+									<br />
+									Time
+								</div>
+							</div>
+						</th>
 
-						<th>#</th>
+						<!-- <th>Day</th> -->
+						<th>Monday</th>
+						<th>Tuesday</th>
+						<th>Wednesday</th>
+						<th>Thursday</th>
+						<th>Friday</th>
+
+						<th>Saturday</th>
+						<th>########</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<td data-label="Day">Tue/Thurs</td>
-						<td data-label="Status">Beginners</td>
-						<td data-label="Time">4:00pm - 6:00pm</td>
+						<td data-label="Day">10:00AM - 4:00PM</td>
+						<td data-label="Status">Workout of the day</td>
+						<td data-label="Time">Workout of the day</td>
+						<td data-label="Time">Workout of the day</td>
+						<td data-label="Time">Workout of the day</td>
+						<td data-label="Time">Workout of the day</td>
+						<td data-label="Time"></td>
 
 						<td data-label="#">
 							<a
@@ -190,9 +236,13 @@
 						</td>
 					</tr>
 					<tr>
-						<td data-label="Day">Mon/Wed</td>
-						<td data-label="Status">Advanced</td>
-						<td data-label="Time">4:00pm - 6:00pm</td>
+						<td data-label="Day">5:00PM - 6:00PM</td>
+						<td data-label="Status">Thai Box (kids)</td>
+						<td data-label="Time">M.M.A (kids)</td>
+						<td data-label="Time">Thai box (kids)</td>
+						<td data-label="Time">M.M.A (kids)</td>
+						<td data-label="Time">-</td>
+						<td data-label="Time">-</td>
 
 						<td data-label="#">
 							<a
@@ -203,18 +253,13 @@
 						</td>
 					</tr>
 					<tr>
-						<td data-label="Day">Mon/Wed</td>
-						<td data-label="Status">Amateurs</td>
-						<td data-label="Time">6:00pm - 7:00pm</td>
-
-						<td data-label="#">
-							<p style="color: red; font-weight: bolder">Members only</p>
-						</td>
-					</tr>
-					<tr>
-						<td data-label="Day">Tue/Thurs</td>
-						<td data-label="Status">Boxing</td>
-						<td data-label="Time">7:00pm - 8:00pm</td>
+						<td data-label="Day">6:00PM - 7:00PM</td>
+						<td data-label="Status">Thai Box (Teenagers)</td>
+						<td data-label="Time">Power&Fit (Teenagers)</td>
+						<td data-label="Time">M.M.A (Teenagers)</td>
+						<td data-label="Time">Power&Fit (Teenagers)</td>
+						<td data-label="Time">-</td>
+						<td data-label="Time">-</td>
 
 						<td data-label="#">
 							<a
@@ -225,9 +270,13 @@
 						</td>
 					</tr>
 					<tr>
-						<td data-label="Day">Mon/Wed</td>
-						<td data-label="Status">Thai Box</td>
-						<td data-label="Time">7:00pm - 8:00pm</td>
+						<td data-label="Day">7:00PM - 8:30PM</td>
+						<td data-label="Status">ViKinG Team</td>
+						<td data-label="Time">ViKinG Team</td>
+						<td data-label="Time">ViKinG Team</td>
+						<td data-label="Time">ViKinG Team</td>
+						<td data-label="Time">-</td>
+						<td data-label="Time">-</td>
 
 						<td data-label="#">
 							<a
@@ -238,9 +287,30 @@
 						</td>
 					</tr>
 					<tr>
+						<td data-label="Day">8:30PM - 9:30PM</td>
+						<td data-label="Status">-</td>
+						<td data-label="Time">-</td>
+						<td data-label="Time">-</td>
+						<td data-label="Time">-</td>
+						<td data-label="Time">-</td>
+						<td data-label="Time">-</td>
+
+						<td data-label="#">
+							<a
+								href="https://us10.list-manage.com/contact-form?u=253132bdbdb019212673a5d37&form_id=1086dd02b62c8980588883d6498360df"
+								class="btn"
+								>Enroll Now</a
+							>
+						</td>
+					</tr>
+					<!-- <tr>
 						<td data-label="Day">Tue/Thurs</td>
 						<td data-label="Status">CROSSFIT</td>
 						<td data-label="Time">6:00pm - 7:00pm</td>
+						<td data-label="Time">-</td>
+						<td data-label="Time">-</td>
+						<td data-label="Time">-</td>
+						<td data-label="Time">-</td>
 
 						<td data-label="#">
 							<a
@@ -254,6 +324,10 @@
 						<td data-label="Day">Mon/Wed</td>
 						<td data-label="Status">The ViKinG Team</td>
 						<td data-label="Time">8:00pm - 10:00pm</td>
+						<td data-label="Time">-</td>
+						<td data-label="Time">-</td>
+						<td data-label="Time">-</td>
+						<td data-label="Time">-</td>
 
 						<td data-label="#">
 							<p style="color: red; font-weight: bolder">Members only</p>
@@ -263,6 +337,10 @@
 						<td data-label="Day">Sat</td>
 						<td data-label="Status">The ViKinG Team</td>
 						<td data-label="Time">10:00Am - 12:00pm</td>
+						<td data-label="Time">-</td>
+						<td data-label="Time">-</td>
+						<td data-label="Time">-</td>
+						<td data-label="Time">-</td>
 
 						<td data-label="#">
 							<p style="color: red; font-weight: bolder">Members only</p>
@@ -272,6 +350,10 @@
 						<td data-label="Day">Tue/Thur</td>
 						<td data-label="Status">M.M.A</td>
 						<td data-label="Time">8:00pm - 10:00pm</td>
+						<td data-label="Time">-</td>
+						<td data-label="Time">-</td>
+						<td data-label="Time">-</td>
+						<td data-label="Time">-</td>
 
 						<td data-label="#">
 							<a
@@ -280,7 +362,7 @@
 								>Enroll Now</a
 							>
 						</td>
-					</tr>
+					</tr> -->
 				</tbody>
 			</table>
 		</div>
