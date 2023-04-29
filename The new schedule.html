@@ -143,6 +143,29 @@
 			}
 
 			@media (max-width: 768px) {
+				body {
+					/* background-color: #333;
+				font-family: sans-serif;
+				background-image: url(Images/vkgLogoNoBackground.png);
+				background-repeat: no-repeat; */
+					background-image: url(Images/vkgLogoNoBackground.png);
+					background-size: 100%;
+					font-family: Arial, sans-serif;
+					background-color: #333;
+					margin-top: 80px;
+					background-position-y: 7.5%;
+					background-repeat: no-repeat;
+					background-position-x: 47%;
+					margin-bottom: 100px;
+
+					justify-content: center;
+					align-items: center;
+				}
+
+				.cont-image {
+					margin-bottom: 180px;
+				}
+
 				.table thead {
 					display: none;
 				}
@@ -177,8 +200,9 @@
 
 				img {
 					width: 100%;
-					object-fit: cover;
+					object-fit: contain;
 					margin-right: -20px;
+					margin-top: 100px;
 				}
 
 				td:nth-child(1) {
@@ -198,14 +222,31 @@
 					color: white !important;
 				}
 
-				td[data-label="Friday"] {
-					font-size: medium !important;
+				td[data-label="Friday FIGHT NIGHT"]::before {
+					visibility: hidden !important;
+					display: none !important;
+					content: "" !important;
 				}
+
+				td[data-label="Friday FIGHT NIGHT"]::after {
+					visibility: hidden !important;
+					display: none !important;
+					content: "sdasd" !important;
+				}
+
+				/* td[data-label="Friday"]::before {
+					font-size: medium !important;
+					content: "Friday";
+				} */
 
 				td[data-label="Friday0"]::before {
 					font-size: medium !important;
 					content: "Friday";
 					font-weight: light !important;
+				}
+
+				td.cancel {
+					content: " " !important;
 				}
 			}
 		</style>
@@ -299,8 +340,8 @@
 						<td data-label="Wednesday">Thai box (kids)</td>
 						<td data-label="Thursday">M.M.A (kids)</td>
 						<td
-							class=""
-							data-label="Friday"
+							class="cancel"
+							data-label="Friday FIGHT NIGHT"
 							style="
 								border-bottom: 1px solid red;
 								background-color: red;
@@ -344,8 +385,8 @@
 						<td data-label="Wednesday">M.M.A (Teenagers)</td>
 						<td data-label="Thursday">Power&Fit (Teenagers)</td>
 						<td
-							td
-							data-label="Friday"
+							class="cancel"
+							data-label="Friday FIGHT NIGHT"
 							style="
 								border-bottom: 1px solid red;
 								background-color: red;
@@ -389,8 +430,8 @@
 						<td data-label="Wednesday">ViKinG Team</td>
 						<td data-label="Thursday">ViKinG Team</td>
 						<td
-							class="border1"
-							data-label="Friday"
+							class="cancel"
+							data-label="Friday FIGHT NIGHT"
 							style="
 								border-bottom: 1px solid red;
 								background-color: red;
@@ -419,7 +460,7 @@
 					</tr>
 					<tr>
 						<td
-							data-label="Friday"
+							data-label="Time"
 							style="background-color: black; font-weight: bold"
 						>
 							8:30PM - 9:30PM
@@ -429,7 +470,8 @@
 						<td data-label="Wednesday">Self-defense</td>
 						<td data-label="Thursday">HIIT</td>
 						<td
-							data-label="Friday"
+							class="cancel"
+							data-label="Friday FIGHT NIGHT"
 							style="
 								border-bottom: 1px solid red;
 								background-color: red;
