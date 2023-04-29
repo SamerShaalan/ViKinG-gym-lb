@@ -180,6 +180,33 @@
 					object-fit: cover;
 					margin-right: -20px;
 				}
+
+				td:nth-child(1) {
+					background-color: rgb(60, 63, 68, 0.7) !important;
+				}
+				td:nth-child(1)::before {
+					content: "Time";
+				}
+
+				/* td[data-label="Monday"] {
+					color: white !important;
+				} */
+
+				td[data-label="Time1"] {
+					background-color: rgb(60, 63, 68, 0.7) !important;
+					border-bottom: rgb(60, 63, 68, 0.7) !important;
+					color: white !important;
+				}
+
+				td[data-label="Friday"] {
+					font-size: medium !important;
+				}
+
+				td[data-label="Friday0"]::before {
+					font-size: medium !important;
+					content: "Friday";
+					font-weight: light !important;
+				}
 			}
 		</style>
 	</head>
@@ -222,23 +249,25 @@
 				<tbody>
 					<tr>
 						<td
-							data-label="Day"
+							data-label="Monday"
 							style="
 								background-color: black;
 								font-weight: bold;
 								border-bottom: 1px solid white;
 								border-right: 1px solid white;
 							"
+							class="hours"
 						>
 							10:00AM - 4:00PM
 						</td>
-						<td data-label="Status">Workout of the day</td>
-						<td data-label="Time">Workout of the day</td>
-						<td data-label="Time">Workout of the day</td>
-						<td data-label="Time">Workout of the day</td>
-						<td data-label="Time">Workout of the day</td>
+
+						<td data-label="Monday">Workout of the day</td>
+						<td data-label="Tuesday">Workout of the day</td>
+						<td data-label="Wednesday">Workout of the day</td>
+						<td data-label="Thursday">Workout of the day</td>
+						<td data-label="Friday0">Workout of the day</td>
 						<td
-							data-label="Time"
+							data-label="Saturday"
 							style="font-weight: bolder; background-color: red; color: black"
 						>
 							Members
@@ -255,7 +284,7 @@
 					<tr>
 						<td
 							class="time"
-							data-label="Day"
+							data-label="Tuesday"
 							style="
 								background-color: black;
 								font-weight: bold;
@@ -265,13 +294,13 @@
 						>
 							5:00PM - 6:00PM
 						</td>
-						<td data-label="Status">Thai Box (kids)</td>
-						<td data-label="Time">M.M.A (kids)</td>
-						<td data-label="Time">Thai box (kids)</td>
-						<td data-label="Time">M.M.A (kids)</td>
+						<td data-label="Monday">Thai Box (kids)</td>
+						<td data-label="Tuesday">M.M.A (kids)</td>
+						<td data-label="Wednesday">Thai box (kids)</td>
+						<td data-label="Thursday">M.M.A (kids)</td>
 						<td
-							class="border1"
-							data-label="Time"
+							class=""
+							data-label="Friday"
 							style="
 								border-bottom: 1px solid red;
 								background-color: red;
@@ -281,16 +310,16 @@
 								font-size: large;
 							"
 						>
-							Friday
+							FIGHT NIGHT
 						</td>
 						<td
-							data-label="Time"
+							data-label="Saturday"
 							style="font-weight: bolder; background-color: red; color: black"
 						>
 							Members
 						</td>
 
-						<td data-label="#">
+						<td data-label="Tuesday">
 							<a
 								href="https://us10.list-manage.com/contact-form?u=253132bdbdb019212673a5d37&form_id=1086dd02b62c8980588883d6498360df"
 								class="btn"
@@ -300,7 +329,7 @@
 					</tr>
 					<tr>
 						<td
-							data-label="Day"
+							data-label="Wednesday"
 							style="
 								background-color: black;
 								font-weight: bold;
@@ -310,12 +339,13 @@
 						>
 							6:00PM - 7:00PM
 						</td>
-						<td data-label="Status">Thai Box (Teenagers)</td>
-						<td data-label="Time">Power&Fit (Teenagers)</td>
-						<td data-label="Time">M.M.A (Teenagers)</td>
-						<td data-label="Time">Power&Fit (Teenagers)</td>
+						<td data-label="Monday">Thai Box (Teenagers)</td>
+						<td data-label="Tuesday">Power&Fit (Teenagers)</td>
+						<td data-label="Wednesday">M.M.A (Teenagers)</td>
+						<td data-label="Thursday">Power&Fit (Teenagers)</td>
 						<td
-							class="border1"
+							td
+							data-label="Friday"
 							style="
 								border-bottom: 1px solid red;
 								background-color: red;
@@ -324,18 +354,17 @@
 								vertical-align: bottom;
 								font-size: x-large;
 							"
-							data-label="Time"
 						>
-							FIGHT
+							FIGHT NIGHT
 						</td>
 						<td
-							data-label="Time"
+							data-label="Saturday"
 							style="font-weight: bolder; background-color: red; color: black"
 						>
 							Members
 						</td>
 
-						<td data-label="#">
+						<td data-label="Wednesday">
 							<a
 								href="https://us10.list-manage.com/contact-form?u=253132bdbdb019212673a5d37&form_id=1086dd02b62c8980588883d6498360df"
 								class="btn"
@@ -345,7 +374,7 @@
 					</tr>
 					<tr>
 						<td
-							data-label="Day"
+							data-label="Thursday"
 							style="
 								background-color: black;
 								font-weight: bold;
@@ -355,13 +384,13 @@
 						>
 							7:00PM - 8:30PM
 						</td>
-						<td data-label="Status">ViKinG Team</td>
-						<td data-label="Time">ViKinG Team</td>
-						<td data-label="Time">ViKinG Team</td>
-						<td data-label="Time">ViKinG Team</td>
+						<td data-label="Monday">ViKinG Team</td>
+						<td data-label="Tuesday">ViKinG Team</td>
+						<td data-label="Wednesday">ViKinG Team</td>
+						<td data-label="Thursday">ViKinG Team</td>
 						<td
 							class="border1"
-							data-label="Time"
+							data-label="Friday"
 							style="
 								border-bottom: 1px solid red;
 								background-color: red;
@@ -371,16 +400,16 @@
 								font-size: x-large;
 							"
 						>
-							NIGHT
+							FIGHT NIGHT
 						</td>
 						<td
-							data-label="Time"
+							data-label="Saturday"
 							style="font-weight: bolder; background-color: red; color: black"
 						>
 							Members
 						</td>
 
-						<td data-label="#">
+						<td data-label="Thursday">
 							<a
 								href="https://us10.list-manage.com/contact-form?u=253132bdbdb019212673a5d37&form_id=1086dd02b62c8980588883d6498360df"
 								class="btn"
@@ -390,17 +419,17 @@
 					</tr>
 					<tr>
 						<td
-							data-label="Day"
+							data-label="Friday"
 							style="background-color: black; font-weight: bold"
 						>
 							8:30PM - 9:30PM
 						</td>
-						<td data-label="Time">Self-defense</td>
-						<td data-label="Time">HIIT</td>
-						<td data-label="Time">Self-defense</td>
-						<td data-label="Time">HIIT</td>
+						<td data-label="Monday">Self-defense</td>
+						<td data-label="Tuesday">HIIT</td>
+						<td data-label="Wednesday">Self-defense</td>
+						<td data-label="Thursday">HIIT</td>
 						<td
-							data-label="Time"
+							data-label="Friday"
 							style="
 								border-bottom: 1px solid red;
 								background-color: red;
@@ -410,10 +439,10 @@
 								font-size: x-large;
 							"
 						>
-							!!!
+							FIGHT NIGHT
 						</td>
 						<td
-							data-label="Time"
+							data-label="Saturday"
 							style="background-color: red; color: black; font-weight: bolder"
 						>
 							Members
