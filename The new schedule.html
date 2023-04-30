@@ -224,16 +224,14 @@
 				}
 
 				td[data-label="Friday FIGHT NIGHT"]::before {
-					visibility: hidden !important;
 					display: none !important;
-					content: "" !important;
 				}
 
-				td[data-label="Friday FIGHT NIGHT"]::after {
+				/* td[data-label="Friday FIGHT NIGHT"]::after {
 					visibility: hidden !important;
 					display: none !important;
 					content: "sdasd" !important;
-				}
+				} */
 
 				/* td[data-label="Friday"]::before {
 					font-size: medium !important;
@@ -247,7 +245,12 @@
 				}
 
 				td.cancel {
-					content: " " !important;
+					display: flex;
+					justify-self: center;
+					padding-left: 130px !important;
+				}
+
+				.cancel {
 				}
 
 				a.btn {
