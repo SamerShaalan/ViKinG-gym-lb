@@ -224,14 +224,15 @@
 				}
 
 				td[data-label="Friday FIGHT NIGHT"]::before {
-					display: none !important;
+					/* display: none !important; */
+					content: "VKG";
+					color: black !important;
 				}
 
-				/* td[data-label="Friday FIGHT NIGHT"]::after {
+				td[data-label="Friday FIGHT NIGHT"]::after {
 					visibility: hidden !important;
 					display: none !important;
-					content: "sdasd" !important;
-				} */
+				}
 
 				/* td[data-label="Friday"]::before {
 					font-size: medium !important;
@@ -244,13 +245,64 @@
 					font-weight: light !important;
 				}
 
-				td.cancel {
+				td.cancel1 {
+					justify-items: center;
+					padding-right: 130px !important;
+					color: red !important;
 					display: flex;
-					justify-self: center;
-					padding-left: 130px !important;
 				}
 
-				.cancel {
+				td.cancel1::before {
+					display: flex;
+					justify-items: center;
+					padding-left: 140px;
+					font-size: larger;
+				}
+
+				td.cancel2 {
+					justify-items: center;
+					padding-left: 0px !important;
+					display: flex;
+					color: red !important;
+				}
+
+				td.cancel2::before {
+					display: flex;
+					justify-items: center;
+					padding-left: 110px !important;
+					font-size: larger;
+
+					content: "FRIDAY";
+				}
+
+				td.cancel3 {
+					justify-items: center;
+					padding-left: 125px !important;
+					color: red !important;
+					display: flex;
+				}
+
+				td.cancel3::before {
+					display: flex;
+					justify-items: center;
+					padding-left: 110px !important;
+					font-size: larger;
+					content: "FIGHT";
+				}
+
+				td.cancel4 {
+					justify-items: center;
+					padding-left: 150px !important;
+					display: flex;
+					color: red !important;
+				}
+
+				td.cancel4::before {
+					display: flex;
+					justify-items: center;
+					padding-left: 110px !important;
+					font-size: larger;
+					content: "NIGHT";
 				}
 
 				a.btn {
@@ -259,6 +311,23 @@
 
 				.btn {
 					margin-right: 50%;
+				}
+				/* Extra row styles */
+				.extra-row {
+					display: table-row;
+				}
+
+				td.extra-row {
+					display: flex !important;
+					justify-items: center !important;
+					padding-left: 130px !important;
+					font-weight: bolder !important;
+					font-size: larger !important;
+				}
+
+				/* Hide extra row by default */
+				.extra-row {
+					display: block !important;
 				}
 			}
 		</style>
@@ -296,6 +365,7 @@
 						<th style="background-color: red">
 							Saturday <br />(10:00am - 2:00pm)
 						</th>
+
 						<th>########</th>
 					</tr>
 				</thead>
@@ -319,6 +389,9 @@
 						<td data-label="Wednesday">Workout of the day</td>
 						<td data-label="Thursday">Workout of the day</td>
 						<td data-label="Friday0">Workout of the day</td>
+
+						<td style="display: none" class="extra-row">ViKinG</td>
+
 						<td
 							data-label="Saturday"
 							style="font-weight: bolder; background-color: red; color: black"
@@ -352,7 +425,7 @@
 						<td data-label="Wednesday">Thai box (kids)</td>
 						<td data-label="Thursday">M.M.A (kids)</td>
 						<td
-							class="cancel"
+							class="cancel1"
 							data-label="Friday FIGHT NIGHT"
 							style="
 								border-bottom: 1px solid red;
@@ -397,7 +470,7 @@
 						<td data-label="Wednesday">M.M.A (Young)</td>
 						<td data-label="Thursday">Power&Fit</td>
 						<td
-							class="cancel"
+							class="cancel2"
 							data-label="Friday FIGHT NIGHT"
 							style="
 								border-bottom: 1px solid red;
@@ -442,7 +515,7 @@
 						<td data-label="Wednesday">ViKinG Team</td>
 						<td data-label="Thursday">ViKinG Team</td>
 						<td
-							class="cancel"
+							class="cancel3"
 							data-label="Friday FIGHT NIGHT"
 							style="
 								border-bottom: 1px solid red;
@@ -482,7 +555,7 @@
 						<td data-label="Wednesday">Self-defense(Adults)</td>
 						<td data-label="Thursday">HIIT(Adults)</td>
 						<td
-							class="cancel"
+							class="cancel4"
 							data-label="Friday FIGHT NIGHT"
 							style="
 								border-bottom: 1px solid red;
