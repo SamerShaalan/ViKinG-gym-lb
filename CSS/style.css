@@ -253,12 +253,12 @@ nav ul li a:hover::after {
 	}
 
 	.main h2 {
-		font-size: 50px;
+		font-size: 40px;
 	}
 
 	.main h1 {
 		margin-left: -20px;
-		font-size: 40px;
+		font-size: 50px;
 	}
 
 	.main p {
