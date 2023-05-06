@@ -283,6 +283,10 @@ nav ul li a:hover::after {
 		margin-left: -30px;
 	}
 
+	img.vkg {
+		margin-left: -10px;
+	}
+
 	.button {
 		margin-top: 50px;
 	}
