@@ -288,6 +288,6 @@ nav ul li a:hover::after {
 	}
 	.slogan {
 		margin-left: 15px;
-		font-size: x-large;
+		font-size: large;
 	}
 }
