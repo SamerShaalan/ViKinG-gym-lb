@@ -27,7 +27,7 @@
 				font-family: Arial, sans-serif;
 				background-color: #333;
 				margin-top: 80px;
-				background-position-y: 150%;
+				background-position-y: 135%;
 				background-repeat: no-repeat;
 				background-position-x: 47%;
 
@@ -72,7 +72,7 @@
 				border-width: 0 0 0 100%;
 				border-color: transparent transparent transparent black;
 				transform-origin: 0 0;
-				transform: skew(55.6deg);
+				transform: skew(52.4deg);
 
 				z-index: 1;
 			}
@@ -144,10 +144,6 @@
 
 			@media (max-width: 768px) {
 				body {
-					/* background-color: #333;
-				font-family: sans-serif;
-				background-image: url(Images/vkgLogoNoBackground.png);
-				background-repeat: no-repeat; */
 					background-image: url(Images/vkgLogoNoBackground.png);
 					background-size: 100%;
 					font-family: Arial, sans-serif;
@@ -206,16 +202,50 @@
 				}
 
 				td:nth-child(1) {
-					background-color: /*rgb(60, 63, 68, 0.7)*/ yellow !important;
+					background-color: yellow !important;
 					text-shadow: 1px 1px 1px black;
 				}
 				td:nth-child(1)::before {
 					content: "Time";
 				}
 
-				/* td[data-label="Monday"] {
-					color: white !important;
-				} */
+				span.kidsSpan {
+					display: block !important;
+					position: absolute;
+					left: 0 !important;
+					padding-left: 100px;
+					text-shadow: 1px 1px 1px black !important;
+				}
+
+				.youngSpan {
+					display: block !important;
+					position: absolute;
+					left: 0 !important;
+					padding-left: 90px;
+					color: black !important;
+					text-shadow: 1px 1px 1px black !important;
+				}
+
+				.adultSpan {
+					display: block !important;
+					position: absolute;
+					left: 0 !important;
+					padding-left: 90px;
+					color: black !important;
+					text-shadow: 1px 1px 1px black !important;
+				}
+
+				.YOUNG {
+					display: none;
+				}
+
+				.ADULT {
+					display: NONE;
+				}
+
+				.KIDS {
+					display: NONE;
+				}
 
 				td[data-label="Time1"] {
 					background-color: rgb(60, 63, 68, 0.7) !important;
@@ -224,21 +254,10 @@
 				}
 
 				td[data-label="Friday FIGHT NIGHT"]::before {
-					/* display: none !important; */
 					content: "VKG";
 
 					color: black !important;
 				}
-
-				td[data-label="Friday FIGHT NIGHT"]::after {
-					visibility: hidden !important;
-					display: none !important;
-				}
-
-				/* td[data-label="Friday"]::before {
-					font-size: medium !important;
-					content: "Friday";
-				} */
 
 				td[data-label="Friday0"]::before {
 					font-size: medium !important;
@@ -247,7 +266,6 @@
 				}
 
 				td.cancel1 {
-					/* justify-items: center; */
 					padding-right: 10px !important;
 					color: red !important;
 					display: flex;
@@ -262,7 +280,6 @@
 				}
 
 				td.cancel2 {
-					/* justify-items: center; */
 					padding-left: 110px !important;
 					display: flex;
 					color: red !important;
@@ -270,7 +287,7 @@
 
 				td.cancel2::before {
 					display: flex;
-					/* justify-items: center; */
+
 					padding-left: 110px !important;
 
 					font-size: larger;
@@ -315,7 +332,7 @@
 				.btn {
 					margin-right: 50%;
 				}
-				/* Extra row styles */
+
 				.extra-row {
 					display: table-row;
 				}
@@ -330,7 +347,6 @@
 					color: gold !important;
 				}
 
-				/* Hide extra row by default */
 				.extra-row {
 					display: block !important;
 				}
@@ -423,11 +439,16 @@
 								border-right: 1px solid white;
 							"
 						>
+							<span class="kidsSpan" style="display: none; color: black"
+								>KIDS</span
+							>
 							5:00PM - 6:00PM
 						</td>
-						<td data-label="Monday">Thai (kids)</td>
-						<td data-label="Tuesday">Boxing(kids)</td>
-						<td data-label="Wednesday">M.M.A (kids)</td>
+						<td data-label="Monday">Thai<span class="KIDS">(kids)</span></td>
+						<td data-label="Tuesday">Boxing<span class="KIDS">(kids)</span></td>
+						<td data-label="Wednesday">
+							M.M.A <span class="KIDS">(kids)</span>
+						</td>
 						<td data-label="Thursday">Warriors workout</td>
 						<td
 							class="cancel1"
@@ -468,11 +489,18 @@
 								border-right: 1px solid white;
 							"
 						>
+							<span class="youngSpan" style="display: none; color: black"
+								>YOUNG</span
+							>
 							6:00PM - 7:00PM
 						</td>
-						<td data-label="Monday">Thai (Young)</td>
-						<td data-label="Tuesday">Boxing (Young)</td>
-						<td data-label="Wednesday">M.M.A (Young)</td>
+						<td data-label="Monday">Thai <span class="YOUNG">(Young)</span></td>
+						<td data-label="Tuesday">
+							Boxing<span class="YOUNG">(Young)</span>
+						</td>
+						<td data-label="Wednesday">
+							M.M.A <span class="YOUNG">(Young)</span>
+						</td>
 						<td data-label="Thursday">Warriors workout</td>
 						<td
 							class="cancel2"
@@ -553,11 +581,19 @@
 							data-label="Time"
 							style="background-color: black; font-weight: bold"
 						>
-							8:30PM - 9:30PM
+							<span class="adultSpan" style="display: none; color: black"
+								>ADULT</span
+							>8:30PM - 9:30PM
 						</td>
-						<td data-label="Monday">Thai (Adults)</td>
-						<td data-label="Tuesday">Boxing (Adults)</td>
-						<td data-label="Wednesday">M.M.A(Adults)</td>
+						<td data-label="Monday">
+							Thai <span class="ADULT">(Adults)</span>
+						</td>
+						<td data-label="Tuesday">
+							Boxing <span class="ADULT">(Adults)</span>
+						</td>
+						<td data-label="Wednesday">
+							M.M.A<span class="ADULT">(Adults)</span>
+						</td>
 						<td data-label="Thursday">Warriors workout</td>
 						<td
 							class="cancel4"
