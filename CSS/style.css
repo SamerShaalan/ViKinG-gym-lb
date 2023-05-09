@@ -186,6 +186,8 @@ nav ul li a:hover::after {
 }
 
 @media (max-width: 750px) {
+	body {
+	}
 	.container {
 		background-position: 50%;
 		background-size: 520px;
@@ -251,10 +253,12 @@ nav ul li a:hover::after {
 	}
 
 	.main h2 {
-		font-size: 30px;
+		margin-top: -200px;
+		font-size: 20px;
 	}
 
 	.main h1 {
+		margin-top: -20px;
 		margin-left: -20px;
 		font-size: 70px;
 	}
@@ -283,13 +287,14 @@ nav ul li a:hover::after {
 
 	img.vkg {
 		margin-left: -53px;
+		margin-top: -190px;
 	}
 
 	.button {
-		margin-top: 50px;
+		margin-top: 5.8px;
 	}
 	.slogan {
-		margin-left: 25px;
+		margin-left: 60px;
 		font-size: large;
 	}
 }
