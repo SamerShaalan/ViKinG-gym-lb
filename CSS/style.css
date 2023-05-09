@@ -192,8 +192,6 @@ nav ul li a:hover::after {
 		background-position-y: 50px;
 		background-repeat: no-repeat;
 		background-color: black;
-
-		height: auto;
 	}
 
 	.nav-links {
