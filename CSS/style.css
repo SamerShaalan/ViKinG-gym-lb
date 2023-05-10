@@ -144,6 +144,8 @@ nav ul li a:hover::after {
 
 .slogan {
 	font-size: xx-large;
+	display: flex;
+	justify-content: center;
 }
 
 .sponsoredBy {
@@ -281,9 +283,8 @@ nav ul li a:hover::after {
 		margin-top: 6.8px;
 	}
 	.slogan {
-		margin-left: 10px;
 		font-size: large;
-		letter-spacing: 2px;
+
 		display: flex;
 		justify-content: center;
 		align-items: center;
