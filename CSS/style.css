@@ -186,7 +186,7 @@ nav ul li a:hover::after {
 		font-size: 80px;
 	}
 
-	.vkg {
+	img.vkg {
 		width: 35%;
 		height: 30%;
 		display: flex;
@@ -194,6 +194,10 @@ nav ul li a:hover::after {
 		align-items: center;
 		margin-top: -100px;
 		margin-bottom: 20px;
+	}
+
+	.sponsor {
+		padding-top: -100px;
 	}
 }
 
@@ -263,7 +267,7 @@ nav ul li a:hover::after {
 	}
 
 	.main h2 {
-		margin-top: -100px;
+		margin-top: -300px;
 		font-size: 20px;
 		display: flex;
 		justify-content: center;
@@ -300,16 +304,10 @@ nav ul li a:hover::after {
 		align-items: center;
 	}
 
-	.sponsor {
-		margin-top: -50px;
-	}
-
-	.vkg {
+	img.vkg {
 		width: 35%;
 		height: 30%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding-bottom: 120px;
+
+		margin-top: -380px;
 	}
 }
