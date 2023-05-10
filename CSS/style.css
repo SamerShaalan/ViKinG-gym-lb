@@ -192,7 +192,7 @@ nav ul li a:hover::after {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-top: -75px;
+		margin-top: -100px;
 		margin-bottom: 20px;
 	}
 
@@ -307,6 +307,6 @@ nav ul li a:hover::after {
 	img.vkg {
 		width: 35%;
 		height: 30%;
-		margin-top: -100px;
+		margin-top: -75px;
 	}
 }
