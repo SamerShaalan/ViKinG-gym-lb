@@ -201,7 +201,7 @@ nav ul li a:hover::after {
 	}
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
 	.container {
 		background-position: 50%;
 		background-size: 520px;
