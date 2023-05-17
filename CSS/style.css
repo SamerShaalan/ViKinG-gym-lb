@@ -205,7 +205,7 @@ nav ul li a:hover::after {
 	.container {
 		background-position: 50%;
 		background-size: 520px;
-		background-position-y: 50px;
+		background-position-y: 75px;
 		background-repeat: no-repeat;
 		background-color: black;
 	}
