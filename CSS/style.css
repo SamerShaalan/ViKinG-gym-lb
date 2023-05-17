@@ -304,9 +304,7 @@ nav ul li a:hover::after {
 		align-items: center;
 	}
 
-	img.vkg {
-		width: 35%;
-		height: 30%;
-		margin-top: -55%;
+	a.button {
+		margin-bottom: -150px;
 	}
 }
