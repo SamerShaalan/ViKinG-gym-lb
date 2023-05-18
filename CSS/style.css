@@ -265,7 +265,7 @@ nav ul li a:hover::after {
 	}
 
 	.main h2 {
-		margin-top: -250px;
+		margin-top: -200px;
 		font-size: 20px;
 		/* display: flex;
 		justify-content: center;
@@ -308,4 +308,8 @@ nav ul li a:hover::after {
 	.vkg {
 		margin: 0 auto;
 	} */
+
+	.vkg {
+		padding-bottom: 50px;
+	}
 }
