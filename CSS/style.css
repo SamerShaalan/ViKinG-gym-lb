@@ -307,4 +307,8 @@ nav ul li a:hover::after {
 	a.button {
 		margin-bottom: -150px;
 	}
+
+	.vkg {
+		margin: 0 auto;
+	}
 }
