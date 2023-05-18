@@ -259,7 +259,7 @@ nav ul li a:hover::after {
 	}
 
 	.main {
-		padding-top: 160px;
+		padding-top: 300px;
 	}
 
 	.main h2 {
@@ -294,14 +294,12 @@ nav ul li a:hover::after {
 	}
 	.slogan {
 		font-size: large;
-
-		display: flex;
-		justify-content: center;
-		align-items: center;
 	}
 
 	a.button {
-		margin-bottom: -150px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.vkg {
