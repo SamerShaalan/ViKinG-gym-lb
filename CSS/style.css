@@ -233,6 +233,7 @@ nav ul li a:hover::after {
 	}
 
 	.logo {
+		padding-right: 15px;
 		text-align: center;
 		flex: 1;
 	}
@@ -292,8 +293,9 @@ nav ul li a:hover::after {
 	.button {
 		margin-top: 6.8px;
 	}
-	.slogan {
+	p.slogan {
 		font-size: large;
+		text-align: center;
 	}
 
 	a.button {
