@@ -264,7 +264,7 @@ nav ul li a:hover::after {
 	}
 
 	.main h2 {
-		margin-top: -200px;
+		margin-top: -300px;
 		font-size: 20px;
 	}
 
@@ -292,6 +292,7 @@ nav ul li a:hover::after {
 	}
 
 	img {
+		mar
 		padding-bottom: 50px;
 	}
 }
