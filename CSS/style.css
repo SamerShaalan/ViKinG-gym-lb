@@ -291,8 +291,7 @@ nav ul li a:hover::after {
 		align-items: center;
 	}
 
-	.vkg {
-		margin: 0 auto;
+	img {
 		padding-bottom: 50px;
 	}
 }
